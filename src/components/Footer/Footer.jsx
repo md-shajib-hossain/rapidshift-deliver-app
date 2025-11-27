@@ -4,7 +4,7 @@ import Logo from "../Logo";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer sm:footer-horizontal bg-primary text-neutral-content p-10">
+      <footer className="footer sm:footer-horizontal mb-10  bg-black text-white p-10">
         <Logo></Logo>
         <nav>
           <h6 className="footer-title">Services</h6>

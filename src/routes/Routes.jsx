@@ -4,6 +4,9 @@ import Root from "../Root/Root";
 import Home from "../pages/Home/Home";
 import ErrorPage from "../pages/Error/ErrorPage";
 import Coverage from "../pages/Coverage/Coverage";
+import AuthLayOut from "../AuthLayout/AuthLayOut";
+import SignIn from "../pages/SignIn";
+import Register from "../pages/Register";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +23,20 @@ export const router = createBrowserRouter([
         path: "coverage",
         Component: Coverage,
         loader: () => fetch("/seviceCenter.json").then((res) => res.json()),
+      },
+    ],
+  },
+  {
+    path: "/",
+    Component: AuthLayOut,
+    children: [
+      {
+        path: "sign-in",
+        Component: SignIn,
+      },
+      {
+        path: "register",
+        Component: Register,
       },
     ],
   },
