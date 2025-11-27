@@ -3,6 +3,8 @@ import Banner from "../../components/Hero/Banner";
 import HowItWorks from "../../components/Hero/HowItWorks";
 import OurServices from "../../components/OurServices/OurServices";
 import Brands from "../../components/Brands/Brands";
+import Feature from "../../components/Feature/Feature";
+import Reviews from "../../components/Reviews/Reviews";
 // import Brand2 from "../../components/Brands/Brand2";
 
 const Home = () => {
@@ -17,8 +19,9 @@ const Home = () => {
         <OurServices></OurServices>
       </div>
       <Brands></Brands>
-      {/* <Brand2></Brand2> */}
-      {/* it was made by swiper js */}
+      <Feature></Feature>
+
+      <Reviews></Reviews>
     </>
   );
 };

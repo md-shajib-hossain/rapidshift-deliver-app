@@ -21,22 +21,22 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/" style={getLinkStyle}>
+        <NavLink to="/coverage" style={getLinkStyle}>
           Coverage
         </NavLink>
       </li>
       <li>
-        <NavLink to="/" style={getLinkStyle}>
+        <NavLink to="/d" style={getLinkStyle}>
           About Us
         </NavLink>
       </li>
       <li>
-        <NavLink to="/" style={getLinkStyle}>
+        <NavLink to="/c" style={getLinkStyle}>
           Pricing
         </NavLink>
       </li>
       <li>
-        <NavLink to="/" style={getLinkStyle}>
+        <NavLink to="/g" style={getLinkStyle}>
           Be a Rider
         </NavLink>
       </li>

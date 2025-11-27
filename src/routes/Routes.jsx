@@ -1,10 +1,9 @@
-import React from 'react';
+import React from "react";
 import { createBrowserRouter } from "react-router-dom";
-import Root from '../Root/Root';
-import Home from '../pages/Home/Home';
-import ErrorPage from '../pages/Error/ErrorPage';
-
-
+import Root from "../Root/Root";
+import Home from "../pages/Home/Home";
+import ErrorPage from "../pages/Error/ErrorPage";
+import Coverage from "../pages/Coverage/Coverage";
 
 export const router = createBrowserRouter([
   {
@@ -13,10 +12,15 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/',
+        path: "/",
         index: true,
         Component: Home,
       },
-    ]
+      {
+        path: "coverage",
+        Component: Coverage,
+        loader: () => fetch("/seviceCenter.json").then((res) => res.json()),
+      },
+    ],
   },
 ]);
